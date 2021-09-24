@@ -20,7 +20,7 @@
       Browse:
     </h2>
 
-    <div class="mb-4">
+    <div class="mb-8">
       <SearchFilter @filteredByInput="categorizeByInput" />
       <CategoryFilter class="my-1" @categorizeListings="categorizeByFilter" />
     </div>
@@ -104,7 +104,7 @@ export default {
     filterPosts() {
       this.filteredPosts = this.posts.filter((post) => {
         if (this.inputItem.length > 0) {
-          return post.title.includes(this.inputItem);
+          return post.title.toLowerCase().trim().includes(this.inputItem);
         }
         if (
           this.category === "All" ||
