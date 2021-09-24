@@ -7,10 +7,10 @@
         >
         <br />
         <div
-                class="container lg:flex md:flex sm:flex-none bg-cream w-screen h-screen font-epilogue place-items-center"
+                class="container lg:flex md:flex sm:flex-none bg-cream w-full h-full font-epilogue place-items-center"
         >
                 <div
-                        class="logo-area space-y-1 text-dark-purple font-epilogue m-20 w-1/3 text-center text-sm bg-cream  sm:hidden md:block lg:block place-items-center"
+                        class="logo-area space-y-1 text-dark-purple font-epilogue m-20 w-1/3 text-center text-sm bg-cream  sm:hidden md:hidden lg:block place-items-center"
                 >
                         <h1
                                 class="main-heading sm:text-xl md:text-3xl lg:text-5xl text-dark-purple text-bold font-epilogue"
@@ -236,7 +236,7 @@ export default {
                         }else {
                                 const regex = /^\S+@\S+\.\S+$/
                                 if (regex.test(email) === false ) {
-                                        this.msg['email'] = "Please Enter A Valid Email Address !"                                        
+                                        this.msg['email'] = "Please Enter A Vallid Email Address !"                                        
                                 } else {
                                         emailErr = false
                                 }
