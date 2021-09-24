@@ -236,7 +236,7 @@ export default {
                         }else {
                                 const regex = /^\S+@\S+\.\S+$/
                                 if (regex.test(email) === false ) {
-                                        this.msg['email'] = "Please Enter A Valid Email Address !"                                        
+                                        this.msg['email'] = "Please Enter A Vallid Email Address !"                                        
                                 } else {
                                         emailErr = false
                                 }
